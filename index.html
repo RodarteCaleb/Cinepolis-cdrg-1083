@@ -1,42 +1,254 @@
 <!DOCTYPE html>
-<!-- Rodarte Gonzalez Caleb Daniel -->
-<!-- 5ºI -->
-<!-- 1083 -->
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Cinépolis - Cartelera</title>
-<style>
-body{font-family:Arial,sans-serif;margin:0;background:#f2f2f2;color:#222}
-header{background:white;padding:15px;text-align:center}h1,h2{color:#1769ff}
-nav{background:#1769ff;padding:12px;text-align:center}nav a{color:white;text-decoration:none;margin:12px}
-section{padding:20px}.peliculas{display:flex;flex-wrap:wrap;gap:15px}
-.pelicula{background:white;width:140px;padding:8px;border-radius:6px;text-align:center;box-shadow:0 2px 5px #ccc}
-.pelicula img{width:100%;height:210px;object-fit:contain;background:#fff}button{background:#1769ff;color:white;border:0;padding:8px;border-radius:4px}
-input{display:block;padding:9px;margin:8px 0;width:250px;max-width:90%}input[type=radio]{display:inline;width:auto}footer{background:#222;color:white;text-align:center;padding:15px}
-</style></head><body>
-<header><h1>Cinépolis</h1><p>La magia del cine</p></header>
-<nav><a href="index.html">Inicio / Cartelera</a><a href="inicio_sesion.html">Iniciar sesión</a><a href="tarjeta_club.html">Tarjeta Club Cinépolis</a></nav>
-<section id="cartelera"><h2>Películas en cartelera</h2><div class="peliculas">
-<div class="pelicula"><img src="imagenes/un_mal_partido.jpg" alt="Un Mal Partido"><p>Un Mal Partido</p></div>
-<div class="pelicula"><img src="imagenes/arbol_magico.jpg" alt="El Árbol Mágico"><p>El Árbol Mágico</p></div>
-<div class="pelicula"><img src="imagenes/madre_siniestra.jpg" alt="Madre Siniestra"><p>Madre Siniestra</p></div>
-<div class="pelicula"><img src="imagenes/hope.jpg" alt="Hope: El Primer Impacto"><p>Hope: El Primer Impacto</p></div>
-<div class="pelicula"><img src="imagenes/verity.jpg" alt="Verity: La Sombra de un Engaño"><p>Verity: La Sombra de un Engaño</p></div>
-<div class="pelicula"><img src="imagenes/corazon_bestia.jpg" alt="El Corazón de la Bestia"><p>El Corazón de la Bestia</p></div>
-<div class="pelicula"><img src="imagenes/resident_evil.jpg" alt="Resident Evil: Noche Cero"><p>Resident Evil: Noche Cero</p></div>
-<div class="pelicula"><img src="imagenes/avengers_doomsday.jpg" alt="Avengers: Doomsday"><p>Avengers: Doomsday</p></div>
-<div class="pelicula"><img src="imagenes/street_fighter.jpg" alt="Street Fighter"><p>Street Fighter</p></div>
-<div class="pelicula"><img src="imagenes/bts_tour.jpg" alt="BTS World Tour: Arirang"><p>BTS World Tour: Arirang</p></div>
-<div class="pelicula"><img src="imagenes/clayface.jpg" alt="Clayface"><p>Clayface</p></div>
-<div class="pelicula"><img src="imagenes/bts_tour2.jpg" alt="BTS World Tour: Arirang"><p>BTS World Tour: Arirang</p></div>
-</div></section><section id="estrenos"><h2>Próximamente</h2><div class="peliculas">
-<div class="pelicula"><img src="imagenes/always_lalisa.jpg" alt="Always Lalisa"><p>Always Lalisa</p></div>
-<div class="pelicula"><img src="imagenes/cristiada.jpg" alt="Cristiada"><p>Cristiada</p></div>
-<div class="pelicula"><img src="imagenes/el_final.jpg" alt="El Final"><p>El Final</p></div>
-<div class="pelicula"><img src="imagenes/caida_ballena.jpg" alt="La Caída de la Ballena"><p>La Caída de la Ballena</p></div>
-<div class="pelicula"><img src="imagenes/munecos.jpg" alt="La Isla de las Muñecas"><p>La Isla de las Muñecas</p></div>
-<div class="pelicula"><img src="imagenes/street_menu.jpg" alt="Menú temático: Street Fighter"><p>Menú temático: Street Fighter</p></div>
-<div class="pelicula"><img src="imagenes/sacrificio.jpg" alt="Sacrificio"><p>Sacrificio</p></div>
-</div></section>
-<footer><p>Nombre: Rodarte Gonzalez Caleb Daniel</p><p>Número de control: 24308051281083</p><p>Grupo: 5ºI</p></footer></body></html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Cin&eacute;polis - Cartelera
+  </title>
+  <style>
+    body {
+        font-family:Arial,sans-serif;
+        margin:0;
+        background:#f2f2f2;
+        color:#222;
+    }
+
+    header {
+        background:white;
+        padding:15px;
+        text-align:center;
+    }
+
+    h1,h2 {
+        color:#1769ff;
+    }
+
+    nav {
+        background:#1769ff;
+        padding:12px;
+        text-align:center;
+    }
+
+    nav a {
+        color:white;
+        text-decoration:none;
+        margin:12px;
+    }
+
+    section {
+        padding:20px;
+    }
+
+    .peliculas {
+        display:flex;
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .pelicula {
+        background:white;
+        width:140px;
+        padding:8px;
+        border-radius:6px;
+        text-align:center;
+        box-shadow:0 2px 5px #ccc;
+    }
+
+    .pelicula img {
+        width:100%;
+        height:210px;
+        object-fit:contain;
+        background:#fff;
+    }
+
+    button {
+        background:#1769ff;
+        color:white;
+        border:0;
+        padding:8px;
+        border-radius:4px;
+    }
+
+    input {
+        display:block;
+        padding:9px;
+        margin:8px 0;
+        width:250px;
+        max-width:90%;
+    }
+
+    input[type=radio] {
+        display:inline;
+        width:auto;
+    }
+
+    footer {
+        background:#222;
+        color:white;
+        text-align:center;
+        padding:15px;
+    }
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Cin&eacute;polis
+   </h1>
+   <p>
+    La magia del cine
+   </p>
+  </header>
+  <nav>
+   <a href="index.html">
+    Inicio / Cartelera
+   </a>
+   <a href="inicio_sesion.html">
+    Iniciar sesi&oacute;n
+   </a>
+   <a href="tarjeta_club.html">
+    Tarjeta Club Cin&eacute;polis
+   </a>
+  </nav>
+  <section id="cartelera">
+   <h2>
+    Pel&iacute;culas en cartelera
+   </h2>
+   <div class="peliculas">
+    <div class="pelicula">
+     <img alt="Un Mal Partido" src="imagenes/un_mal_partido.jpg"/>
+     <p>
+      Un Mal Partido
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="El &Aacute;rbol M&aacute;gico" src="imagenes/arbol_magico.jpg"/>
+     <p>
+      El &Aacute;rbol M&aacute;gico
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="Madre Siniestra" src="imagenes/madre_siniestra.jpg"/>
+     <p>
+      Madre Siniestra
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="Hope: El Primer Impacto" src="imagenes/hope.jpg"/>
+     <p>
+      Hope: El Primer Impacto
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="Verity: La Sombra de un Enga&ntilde;o" src="imagenes/verity.jpg"/>
+     <p>
+      Verity: La Sombra de un Enga&ntilde;o
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="El Coraz&oacute;n de la Bestia" src="imagenes/corazon_bestia.jpg"/>
+     <p>
+      El Coraz&oacute;n de la Bestia
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="Resident Evil: Noche Cero" src="imagenes/resident_evil.jpg"/>
+     <p>
+      Resident Evil: Noche Cero
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="Avengers: Doomsday" src="imagenes/avengers_doomsday.jpg"/>
+     <p>
+      Avengers: Doomsday
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="Street Fighter" src="imagenes/street_fighter.jpg"/>
+     <p>
+      Street Fighter
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="BTS World Tour: Arirang" src="imagenes/bts_tour.jpg"/>
+     <p>
+      BTS World Tour: Arirang
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="Clayface" src="imagenes/clayface.jpg"/>
+     <p>
+      Clayface
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="BTS World Tour: Arirang" src="imagenes/bts_tour2.jpg"/>
+     <p>
+      BTS World Tour: Arirang
+     </p>
+    </div>
+   </div>
+  </section>
+  <section id="estrenos">
+   <h2>
+    Pr&oacute;ximamente
+   </h2>
+   <div class="peliculas">
+    <div class="pelicula">
+     <img alt="Always Lalisa" src="imagenes/always_lalisa.jpg"/>
+     <p>
+      Always Lalisa
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="Cristiada" src="imagenes/cristiada.jpg"/>
+     <p>
+      Cristiada
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="El Final" src="imagenes/el_final.jpg"/>
+     <p>
+      El Final
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="La Ca&iacute;da de la Ballena" src="imagenes/caida_ballena.jpg"/>
+     <p>
+      La Ca&iacute;da de la Ballena
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="La Isla de las Mu&ntilde;ecas" src="imagenes/munecos.jpg"/>
+     <p>
+      La Isla de las Mu&ntilde;ecas
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="Men&uacute; tem&aacute;tico: Street Fighter" src="imagenes/street_menu.jpg"/>
+     <p>
+      Men&uacute; tem&aacute;tico: Street Fighter
+     </p>
+    </div>
+    <div class="pelicula">
+     <img alt="Sacrificio" src="imagenes/sacrificio.jpg"/>
+     <p>
+      Sacrificio
+     </p>
+    </div>
+   </div>
+  </section>
+  <footer>
+   <p>
+    Nombre: Rodarte Gonzales Caleb Daniel
+   </p>
+   <p>
+    N&uacute;mero de control: 24308051281083
+   </p>
+   <p>
+    Grupo: 5&ordm;I
+   </p>
+  </footer>
+ </body>
+</html>
+
